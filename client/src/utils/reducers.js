@@ -1,4 +1,3 @@
-//TODO: remove the line below, import { useReducer } from 'react', because we will not use the 'useReducer' hook to generate [ state, dispatch ]
 // state and dispatch will be generated using react-redux hooks, useSelector and useDispatch in the conmponents
 import {
   UPDATE_PRODUCTS,
@@ -12,9 +11,8 @@ import {
   TOGGLE_CART,
 } from './actions';
 
-//TODO: create initialState for the defaults for your app by locating the default values used in this app in the other file and moving it here.
+
 const initialState = {
-  //TODO: fill in the default values here
   products: [],
   cart: [],
   cartOpen: false,
@@ -104,9 +102,5 @@ export const reducers = (state = initialState, action) => {
   }
 };
 
-//TODO: remove the following export code.
-// export function useProductReducer(initialState) {
-//   return useReducer(reducer, initialState);  // const [ state, dispatch ] = useProductReducer()
-// }
-//TODO: Create a default export to export reducers
+
 export default reducers;
